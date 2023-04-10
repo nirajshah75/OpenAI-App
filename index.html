@@ -1,69 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Unique Company</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Auto App Creator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.4/tailwind.min.css" integrity="sha512-OTohpQzCnSbE1w2BgIXkmIeM0JiLfLgIrFJHXI9HFOOsSZc/qgMH+hq1dQw8f+10BG/yJGhZismmgiSyHm9+AQ==" crossorigin="anonymous" />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f2f5;
-        }
-
-        .container {
-            width: 80%;
-            border-radius: 12px;
-            background-color: #fff;
-            box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
-            padding: 3rem;
-            text-align: center;
-        }
-
-        .logo {
-            width: 150px;
-            display: block;
-            margin: 0 auto;
-            margin-bottom: 1rem;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        p {
+        .btn {
+            background-color: #094c4c;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
             font-size: 1.2rem;
-            margin-bottom: 2.5rem;
-            line-height: 1.6;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
         }
 
-        address {
-            font-size: 1.2rem;
-            font-style: normal;
+        .btn:hover {
+            background-color: #1d7d7d;
+        }
+
+        .text-primary {
+            color: #094c4c;
+        }
+
+        .text-secondary {
+            color: #435c64;
+        }
+
+        .features li:before {
+            content: "✔️ ";
+            color: #094c4c;
             font-weight: bold;
-            color: #333;
             display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        @media (max-width: 768px) {
+            .btn {
+                padding: 0.8rem 1.6rem;
+            }
+
+            .text-2xl {
+                font-size: 1.6rem;
+            }
         }
     </style>
 </head>
-
-<body>
-    <div class="container">
-        <img class="logo" src="https://via.placeholder.com/150" alt="Company Logo">
-        <h1>Welcome to My Unique Company</h1>
-        <p>Your one-stop solution for all your business needs! Let us help you drive growth and success in your industry.</p>
-        <address>
-            1234 Unique Street<br>
-            Suite 101<br>
-            Townsville, ST 54321
-        </address>
-    </div>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-white shadow">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a class="text-xl font-bold text-primary" href="#">Auto App Creator</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto my-8">
+        <div class="flex flex-col md:flex-row items-center md:justify-between mb-16">
+            <div class="w-full md:w-1/2 mb-4 md:mb-0">
+                <h2 class="text-4xl font-bold text-primary mb-2">Connect Your Data and Create Apps Easily</h2>
+                <p class="text-secondary mb-4">Our AI app will connect the data from different apps and create apps for you automatically. Say goodbye to manual app creation.</p>
+                <button class="btn text-lg">Get Started</button>
+            </div>
+            <div class="w-full md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1623225369920-0bb58816b2f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMTI3NDR8MHwxfHNlYXJjaHwxOXx8aXRhbGljJTIwYXBwfGVufDB8fHx8MTYyNzMxNjg1OQ&ixlib=rb-1.2.1&q=80&w=1080" alt="Auto App Creator" class="w-full h-auto object-cover object-center rounded-lg">
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center md:justify-between">
+            <div class="w-full md:w-1/2 mb-16 md:mb-0">
+                <img src="https://images.unsplash.com/photo-1600204878646-4243c1b22cd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMTI3NDR8MHwxfHNlYXJjaHwxNnx8aXRhbGljJTIwYXBwfGVufDB8fHx8MTYyNzMxMjkxNw&ixlib=rb-1.2.1&q=80&w=1080" alt="Connect Data" class="w-full h-auto object-cover object-center rounded-lg">
+            </div>
+            <div class="w-full md:w-1/2">
+                <h2 class="text-3xl font-bold text-primary mb-2">Connect Your Data</h2>
+                <p class="text-secondary mb-4">Connect your data from different apps like Google Sheets, Trello, and more. Our AI app will do the rest for you.</p>
+                <ul class="features">
+                    <li>Connect data from different apps easily</li>
+                    <li>No more manual data entry</li>
+                    <li>Save time and effort</li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center md:justify-between">
+            <div class="w-full md:w-1/2">
+                <h2 class="text-3xl font-bold text-primary mb-2">Create Apps Automatically</h2>
+                <p class="text-secondary mb-4">Our AI app will create apps for you automatically based on the connected data. No coding required.</p>
+                <ul class="features">
+                    <li>Auto-create apps</li>
+                    <li>No coding required</li>
+                    <li>Customize your apps easily</li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/2 mb-16 md:mb-0">
+                <img src="https://images.unsplash.com/photo-1582996225796-a215784bbf76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMTI3NDR8MHwxfHNlYXJjaHwxM3x8aXRhbGljJTIwYXBwfGVufDB8fHx8MTYyNzMxMzAyNw&ixlib=rb-1.2.1&q=80&w=1080" alt="Create Apps Automatically" class="w-full h-auto object-cover object-center rounded-lg">
+            </div>
+        </div>
+    </main>
 </body>
-
 </html>
