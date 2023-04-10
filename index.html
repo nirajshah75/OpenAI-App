@@ -1,72 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>AI App Creation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <title>Create Your App with AI</title>
 </head>
+
 <body>
-	<!-- Menu -->
-	<nav>
-		<ul>
-			<li><a href="#about">About Us</a></li>
-			<li><a href="#services">Services</a></li>
-			<li><a href="#pricing">Pricing</a></li>
-		</ul>
-	</nav>
+  <nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
 
-	<!-- Header -->
-	<header>
-		<img src="logo.png" alt="Company Logo">
-		<h1>AI App Creation</h1>
-	</header>
+  <div class="container mt-5">
+    <h1>Create Your App with AI</h1>
+    <h4>Auto-create apps by connecting data from different apps</h4>
+    <form>
+      <div class="form-group">
+        <label for="email">Email address:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+      </div>
+      <button type="submit" class="btn btn-primary">Create Your App</button>
+    </form>
+  </div>
 
-	<!-- About Us Section -->
-	<section id="about">
-		<h2>About Us</h2>
-		<p>We are a team of AI experts who have developed a revolutionary app creation tool. Our app uses connections to various data sources to create fully functional apps without extensive coding. Our tool will save you time and effort while increasing your productivity.</p>
-	</section>
+  <div class="container mt-5">
+    <h3>Features:</h3>
+    <ul>
+      <li>Auto-create apps</li>
+      <li>Connect data from different apps</li>
+      <li>Easy to use</li>
+      <li>Powerful AI</li>
+    </ul>
+  </div>
 
-	<!-- Services Section -->
-	<section id="services">
-		<h2>Our Services</h2>
-		<ul>
-			<li>Automated app creation</li>
-			<li>Data connection to various sources</li>
-			<li>Fully customizable interface</li>
-			<li>User-friendly design</li>
-			<li>Real-time updates of information</li>
-		</ul>
-	</section>
+  <div class="container mt-5">
+    <h3>Pricing:</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Plan</th>
+          <th>Price</th>
+          <th>Features</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Basic</td>
+          <td>$10/month</td>
+          <td>Auto-create apps, connect data from 2 apps</td>
+        </tr>
+        <tr>
+          <td>Pro</td>
+          <td>$20/month</td>
+          <td>Auto-create apps, connect data from 5 apps, customizable branding</td>
+        </tr>
+        <tr>
+          <td>Premium</td>
+          <td>$50/month</td>
+          <td>Auto-create apps, connect data from 10 apps, advanced analytics, priority support</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-	<!-- Pricing Table -->
-	<section id="pricing">
-		<h2>Pricing</h2>
-		<table>
-			<thead>
-				<tr>
-					<th>Plan</th>
-					<th>Price</th>
-					<th>Features</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Basic</td>
-					<td>$50/month</td>
-					<td>Access to one data source</td>
-				</tr>
-				<tr>
-					<td>Standard</td>
-					<td>$100/month</td>
-					<td>Access to up to 5 data sources</td>
-				</tr>
-				<tr>
-					<td>Premium</td>
-					<td>$200/month</td>
-					<td>Access to unlimited data sources</td>
-				</tr>
-			</tbody>
-		</table>
-	</section>
+  <div class="container text-center mt-5">
+    <h3>Contact Us</h3>
+    <p>Have a question? Contact us at info@aiappbuilder.com</p>
+  </div>
 </body>
+
 </html>
